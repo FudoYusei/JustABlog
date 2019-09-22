@@ -79,11 +79,9 @@ theme: Sakura
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    # github: git@github.com:honjun/honjun.github.io.git
-    # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://git.coding.net/hojun/hojun.git
-  branch: master
+  repo: https://github.com/FudoYusei/JustABlog
+  ignore_hidden: false # default is true
+  ignore_pattern: regexp  # whatever file that matches the regexp will be ignored when deploying
 
 # backup
 backup:
