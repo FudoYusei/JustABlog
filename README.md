@@ -29,7 +29,7 @@ If you are a creator, plus group QQ: 194472590
 ## Appreciate the author
 If you like the hexo-theme-sakura theme, you can consider funding it~ I am very grateful!
 
-[paypal](https://www.paypal.me/hojuncn) | [Alipay](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg) | [WeChat Pay](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)
+[paypal](https://www.paypal.me/hojuncn) | [Alipay](https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/custom/donate/AliPayQR.jpg) | [WeChat Pay](https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/custom/donate/WeChanSQ.jpg)
 
 ## Incomplete use tutorial
 
@@ -85,8 +85,8 @@ url : https://sakura.hojun.cn
 #站介绍(或个人
 签名符) [Change] description : Live your life with passion! With some drive!
 
-#站cdn, no is empty [change] If cdn is empty, some image addresses must be filled in the complete address, such as the previous avatar to fill https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / Custom / avatar.jpg 
-CDN : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+#站cdn, no is empty [change] If cdn is empty, some image addresses must be filled in the complete address, such as the previous avatar to fill https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/ img / Custom / avatar.jpg 
+CDN : https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn
 
 #开启pjax [Select] 
 pjax : 1
@@ -95,7 +95,7 @@ pjax : 1
 站首页's announcement information [Change] notice : hexo-Sakura theme has been open source, currently under development...
 
 #懒Loaded loading image [Select] 
-lazyloadImg : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg : https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/loader/orange.progress-bar-stripe-loader.svg
 
 #站菜单 Configuration [Select] 
 menus :
@@ -209,17 +209,17 @@ Technology :
     # English title 
     EN : Geek - Only for Love 
     # Cover Image 
-    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / banner / coding.jpg 
+    img : https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/ img / banner / coding.jpg 
 life :
      zh : life 
     EN : live 
-    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+    img : https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/banner/writing.jpg
 
 # Tag 
 # tag name that is the title 
 pleasure reading :
      # Cover Image 
-    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+    img : https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/banner/reading.jpg
 ```
 
 ## Single page cover configuration

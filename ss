@@ -114,7 +114,7 @@ The file will have its original line endings in your working directory
 [31m-## 赞赏作者[m
 [31m-如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！[m
 [31m-[m
-[31m-[paypal](https://www.paypal.me/hojuncn) | [Alipay 支付宝](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg) | [WeChat Pay 微信支付](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)[m
+[31m-[paypal](https://www.paypal.me/hojuncn) | [Alipay 支付宝](https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/custom/donate/AliPayQR.jpg) | [WeChat Pay 微信支付](https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/custom/donate/WeChanSQ.jpg)[m
 [31m-[m
 [31m-## 未完善的使用教程[m
 [31m-[m
@@ -184,8 +184,8 @@ The file will have its original line endings in your working directory
 [31m-# 站点介绍（或者说是个人签名）【改】[m
 [31m-description: Live your life with passion! With some drive![m
 [31m-[m
-[31m-# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg[m
-[31m-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6[m
+[31m-# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn@1.0/img/custom/avatar.jpg[m
+[31m-cdn: https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn[m
 [31m-[m
 [31m-# 开启pjax 【选】[m
 [31m-pjax: 1[m
@@ -194,7 +194,7 @@ The file will have its original line endings in your working directory
 [31m-notice: hexo-Sakura主题已经开源，目前正在开发中...[m
 [31m-[m
 [31m-# 懒加载的加载中图片 【选】[m
-[31m-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg[m
+[31m-lazyloadImg: https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/loader/orange.progress-bar-stripe-loader.svg[m
 [31m-[m
 [31m-# 站点菜单配置 【选】[m
 [31m-menus:[m
@@ -308,17 +308,17 @@ The file will have its original line endings in your working directory
 [31m-    # 英文标题[m
 [31m-    en: Geek – Only for Love[m
 [31m-    # 封面图片[m
-[31m-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg[m
+[31m-    img: https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/banner/coding.jpg[m
 [31m-生活:[m
 [31m-    zh: 生活[m
 [31m-    en: live[m
-[31m-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg[m
+[31m-    img: https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/banner/writing.jpg[m
 [31m-[m
 [31m-#tag[m
 [31m-# 标签名即是标题[m
 [31m-悦读:[m
 [31m-    # 封面图片[m
-[31m-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg[m
+[31m-    img: https://cdn.jsdelivr.net/gh/fudoyusei/jsdelivercdn/img/banner/reading.jpg[m
 [31m-```[m
 [31m-[m
 [31m-## 单页面封面配置[m
