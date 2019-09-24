@@ -1,8 +1,7 @@
 <%
   var img = page.tag + '.img';
   var firstPost = page.posts.sort('date', theme.homePageSortType).limit(theme.homeArticleShown).eq(0);
-  var firstlink = firstPost.permalink;
-  var firstphotolink = theme.url + url_for(firstlink)+ firstPost.photos[0];
+  var firstphotolink = getpostphoto(theme, firstPost);
 %>
 
 <div class="pattern-center-blank"></div>
