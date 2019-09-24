@@ -1,10 +1,9 @@
 <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<% if (post.photos && post.photos.length){ %>
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(<%- getpostphoto(theme, post) %>);" src="<%- theme.lazyloadImg%>" data-src="<%- getpostphoto(post) %>">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(<%- getpostphoto(theme, post) %>);" src="<%- theme.lazyloadImg%>" data-src="<%- getpostphoto(theme, post) %>">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
@@ -25,7 +24,6 @@
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
   </div>
-<% } %>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
