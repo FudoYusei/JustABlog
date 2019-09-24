@@ -1,5 +1,5 @@
 ---
-title: Hexo创建博客
+title: 使用Hexo创建博客
 author: fudoyusei
 avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
 authorLink: 
@@ -12,8 +12,8 @@ tags:
  - Hexo
  - Git
 keywords: Git
-description: Git常用命令
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+description: Hexo创建静态博客站点
+photos: Use Hexo to build blog.jpg
 ---
 # Hexo
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
@@ -66,6 +66,10 @@ hexo s
 ### hexo deploy
 [使用hexo deploy还需要安装对应的工具](https://hexo.io/zh-cn/docs/deployment.html)
 
+### hexo延伸知识
+[hexo站点布局](https://www.jianshu.com/p/5a1e6d8c83af)
+// todo
+
 # Git
 [初始化本地库，并且建立与远端库联系](https://blog.csdn.net/kuangdacaikuang/article/details/84632883)
 
@@ -87,8 +91,8 @@ hexo s
 - 将本地库中push到gitcoding上，此时gitcoding上的库应该是有除了public文件夹之外的所有内容（与使用GitHub不同，不需要单独建立一个库用于pages）
 - 使用gitcoding的持续部署->静态网站,点击右上角设置进入设置页面
 
-{% asset_image GitCoding.jpg static web in gitcoding %}
-{% asset_image GitCoding2.jpg static web in gitcoding %}
+{% fb_img GitCoding.jpg static web in gitcoding %}
+{% fb_img GitCoding2.jpg static web in gitcoding %}
 如果正确设置，我们通过 git 向GitCoding库中push更新，会自动生成对应的页面，**注意我们push的内容是不包括public文件夹的**。
 
 ## Git常用命令
@@ -145,7 +149,7 @@ jsdilivr就是一个免费的cdn服务，使用jsdilivr+github可以简单建立
 但是我们也可以建立一个目录结构使用相对路径来引用发布的图片
 - 保证我们使用的Hexo版本3.0以上，在package.json中可以确认
 - 使用 hexo new "NewPost" 来创建一个页面，同时我们会在source->_posts下看到NewPost页面以及NewPost文件夹，这个文件夹下的内容会在发布时连带发布到生成的页面的同级目录下，因此我们可以直接使用相对路径
-- {% asset_image image.jpg commentforimage %},因为处于同级目录，直接使用文件名称就行
+- {% fb_img image.jpg commentforimage %},因为处于同级目录，直接使用文件名称就行
 
 [详细步骤]（https://www.jianshu.com/p/cf0628478a4e）
 
@@ -161,3 +165,6 @@ jsdilivr就是一个免费的cdn服务，使用jsdilivr+github可以简单建立
 
 ## Sakura主题
 - 单独标签页的 photos 会用于生成主页列表以及单独文章页，所以无法使用相对路径（虽然文章页获取正确，相对路径会导致主页无法获取到正确图片，因此只能使用直链）
+
+## Git
+- git push 的时候会要求用户名密码，如果输入错误并且git将其缓存，需要使用相应的方法清掉缓存
