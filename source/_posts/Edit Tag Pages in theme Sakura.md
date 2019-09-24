@@ -12,7 +12,7 @@ tags:
     - Hexo
 keywords: Git
 description: Hexo Sakura主题Tag页功能改进
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+photos: 
 ---
 
 # Hexo页面布局
