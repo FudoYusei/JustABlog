@@ -143,6 +143,10 @@ hexo.extend.helper.register('getpostphoto', function(theme, post){
 });
 ```
 
+<<<<<<< HEAD
+=======
+由于lazyload插件导致图片中的名字不能带空格，它会解析成错误的URL，因此所有photos的名称不能使用空格。
+>>>>>>> e83fa54b932497e2e4d047172d6ce100aef0df40
 
 
 
