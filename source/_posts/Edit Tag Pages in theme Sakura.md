@@ -127,12 +127,24 @@ firstlink = https://uath6h.coding-pages.com/2019/09/24/HexoSakura主题进阶-Ta
 
 先修改文章的 Front-matter 中的photos属性为相对路径。
 然后修改所有用到 post.photos 属性的地方
-- post本体使用的顶部 banner 图
-- 首页的文章列表
-- Category中的文章列表
-- Tags中的文章列表
+- post本体使用的顶部封面图
+- 首页的文章列表封面图
+- Category中的文章列表封面图
+- Tags中的文章列表封面图
+- post中前一页后一页封面图
 
 本着Dont Repeat Yourself原则，我们创建一个获得修改后路径的[辅助函数](https://hexo.io/zh-cn/api/helper)
+``` js
+hexo.extend.helper.register('getpostphoto', function(theme, post){
+    var defaultImgUrl = 'https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png';
+
+    if(!post.photos || post.photos.length == 0 || post.photos[0] == defaultImgUrl) {return defaultImgUrl; }
+    return theme.url + '/' + post.path + post.photos[0];
+});
+```
+
+由于lazyload插件导致图片中的名字不能带空格，它会解析成错误的URL，因此所有photos的名称不能使用空格。
+
 
 
 
