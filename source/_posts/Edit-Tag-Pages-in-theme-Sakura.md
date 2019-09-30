@@ -143,11 +143,32 @@ hexo.extend.helper.register('getpostphoto', function(theme, post){
 });
 ```
 
-<<<<<<< HEAD
-=======
-由于lazyload插件导致图片中的名字不能带空格，它会解析成错误的URL，因此所有photos的名称不能使用空格。
->>>>>>> e83fa54b932497e2e4d047172d6ce100aef0df40
+由于lazyload插件导致图片中的名字不能带空格，在div中使用它无法获取正确的图片，原因未知，因此所有引用photos的路径都不能带空格，包括源文件的名称， 统一使用-代替空格。
 
 
+# 修改Tags搜索弹窗展示的Tags选项数量
+Sakura主题中默认的Tags选项数量为5个，多的无法展示, 可以通过修改对应方法展示更多的Tags
+{% asset_img TagSearchInSakura.jpg %}
 
+找到themes/Sakura/source/js/InsightSearch.js
 
+这个文件定义一个匿名函数，其中与Tags相关的核心代码
+``` js
+    function search (json, keywords) {
+        var WEIGHTS = weightFactory(keywords);
+        var FILTERS = filterFactory(keywords);
+        var posts = json.posts;
+        // var pages = json.pages;
+        var tags = extractToSet(json, 'tags');
+        var categories = extractToSet(json, 'categories');
+        return {
+            posts: posts.filter(FILTERS.POST).sort(function (a, b) { return WEIGHTS.POST(b) - WEIGHTS.POST(a); }).slice(0, 20),
+            // pages: pages.filter(FILTERS.PAGE).sort(function (a, b) { return WEIGHTS.PAGE(b) - WEIGHTS.PAGE(a); }).slice(0, 5),
+            categories: categories.filter(FILTERS.CATEGORY).sort(function (a, b) { return WEIGHTS.CATEGORY(b) - WEIGHTS.CATEGORY(a); }).slice(0, 5),
+            // 使用切片函数对排序后的Tags选项进行切片，只要更改数值就能获得想要的效果
+            tags: tags.filter(FILTERS.TAG).sort(function (a, b) { return WEIGHTS.TAG(b) - WEIGHTS.TAG(a); }).slice(0, 20)
+        };
+    }
+```
+修改后的效果
+{% asset_img TagSearchInSakuraAfter.jpg %}
