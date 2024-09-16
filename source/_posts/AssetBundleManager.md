@@ -20,7 +20,7 @@ photos:
 # AssetBundleManager简介
 职责：管理AssetBundle的加载和卸载，分为Editor和运行时两个环境。
 
-1. 通过AssetBundle配置加载依赖关系表，兼容Editor下从AssetBundle加载和不从AssetBundle加载。
+1. 通过AssetBundle配置加载依系表，兼容Editor下从AssetBundle加载和不从AssetBundle加载。
 2. 提供加载卸载AssetBundle功能
 3. 提供加载卸载Asset功能
 
